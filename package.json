@@ -1,0 +1,11 @@
+{
+  "name": "coffeescript-hands-on",
+  "description": "tutorial app for coffeescript hands-on presentation",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "coffee-script": "1.3.x",
+    "express": "3.x",
+    "handson-reddit": "git://github.com/jeremyis/handson-reddit.git"
+  }
+}
