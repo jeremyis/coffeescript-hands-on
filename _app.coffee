@@ -74,8 +74,9 @@ app.get '/:subreddit', (req, res) ->
     simplifiedEntries = (makeEntry(r) for r in entries)
     html = getSimplifiedEntriesHtml simplifiedEntries, subreddit
 
-    # (PROBLEM 1) Replace 200 below with an appropriate call to
-    # getResponseCode. Make sure the page still loads.
+    # (PROBLEM 3) Replace 200 below with an appropriate call to
+    # getResponseCode. Make sure the site still loads. Hint: if the page isn't
+    # loading try compiling the code after you write it (using coffeescript.org)
     res.send 200, html
 
 app.listen 3000
