@@ -1,2 +1,2 @@
 require('coffee-script')
-require('_app.coffee')
+require('./_app.coffee')
