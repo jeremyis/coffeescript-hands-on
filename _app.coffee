@@ -50,9 +50,10 @@ getSimplifiedEntriesHtml = (entries, subreddit) ->
   </html>
   """
 
+entryIsValid = (e) -> e.title? and e.url? and e.score?
+
 # Validate entries, and if valid, return the correct response code
 getResponseCode = (simplifiedEntries) ->
-  entryIsValid = (e) -> e.title? and e.url? and e.score?
   entriesAreOk = [true for e in simplifiedEntries when entryIsValid(e)].length > 0
   if entriesAreOk then 200 else 500
 
