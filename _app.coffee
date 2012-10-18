@@ -77,7 +77,7 @@ respond = (image, res) ->
 #   respond image, res
 
 app.get '/', (req, res) ->
-  respond req.query?.image, res
+  respond req.query?.image?='hotpockets', res
 
 app.listen 3000
 console.log 'Listening on port 3000. Browse to http://127.0.0.1:3000/'
