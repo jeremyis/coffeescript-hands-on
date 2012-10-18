@@ -67,7 +67,16 @@ app.get '/:subreddit', (req, res) ->
 
   # reddit.r requests the top 25 links from the provided subreddit.
   reddit.r subreddit, (err, results) ->
-    entries = JSON.parse(results?.body)?.data?.children
+    entries = [
+      {data: {title:'Screw you reddit', url: '/', score: 3000}}
+      {data: {title:'Ironman', url: '/ironman', score: 4000}}
+      {data: {title:'Black Widow', url: '/black-wdiw', score: 5000}}
+    ]
+
+    # reddit is rate limiting us, so uncomment this line when you are checking this
+    # out on your own:
+    #entries = JSON.parse(results?.body)?.data?.children
+
     if not entries?
       console.error results
       return res.send "Something went wrong! Check yo logs."

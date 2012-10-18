@@ -14,7 +14,6 @@ http://stackoverflow.com/questions/4246024/coffeescript-editor-for-macos
 Don't sweat it if you can't get your editor up and running. Just paste code into
 this link: http://pcsedit.appspot.com
 
-
 (PROBLEM 1)
 ------------
   Run "npm install" and then "node app.js".
