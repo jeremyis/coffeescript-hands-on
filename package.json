@@ -6,6 +6,6 @@
   "dependencies": {
     "coffee-script": "1.3.x",
     "express": "3.x",
-    "handson-reddit": "git://github.com/jeremyis/handson-reddit.git"
+    "google-images": "*"
   }
 }
